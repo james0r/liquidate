@@ -1,8 +1,7 @@
+import { formatPrice, gql } from "@/lib/utils"
 import type { ShopifyExtension, ShopifyProduct } from "@/types"
 import Image from "next/image"
 import Link from "next/link"
-import { formatPrice } from "@/lib/utils"
-import { gql } from "@/lib/utils"
 
 type GraphQLResponse = {
   data: {
@@ -14,11 +13,11 @@ type GraphQLResponse = {
 }
 
 const getProducts = async (): Promise<GraphQLResponse> => {
-  const res = await fetch(process.env.GRAPHQL_API_URL!, {
+  const res = await fetch(process.env.SHOPIFY_GRAPHQL_API_URL!, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-Shopify-Access-Token": process.env.ADMIN_API_ACCESS_TOKEN!
+      "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_API_ACCESS_TOKEN!
     },
     body: JSON.stringify({
       query: gql`
