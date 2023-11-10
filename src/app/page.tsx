@@ -1,8 +1,8 @@
-import { gql } from "@/utils/gql"
 import type { ShopifyExtension, ShopifyProduct } from "@/types"
 import Image from "next/image"
 import Link from "next/link"
-import { formatPrice } from "@/utils/formatPrice"
+import { formatPrice } from "@/lib/utils"
+import { gql } from "@/lib/utils"
 
 type GraphQLResponse = {
   data: {

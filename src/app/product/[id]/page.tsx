@@ -1,6 +1,6 @@
 import { ShopifyExtension, ShopifyProduct } from "@/types"
-import { formatPrice } from "@/utils/formatPrice"
-import { gql } from "@/utils/gql"
+import { formatPrice } from "@/lib/utils"
+import { gql } from "@/lib/utils"
 import Image from "next/image"
 
 type GraphQLResponse = {
