@@ -2,15 +2,18 @@ import clsx from 'clsx'
 
 export default function LogoIcon(props: React.ComponentProps<'svg'>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label={`${process.env.SITE_NAME} logo`}
-      viewBox="0 0 32 28"
+
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="16" 
+      height="16" 
+      fill="currentColor" 
       {...props}
       className={clsx('h-4 w-4 fill-black dark:fill-white', props.className)}
-    >
-      <path d="M21.5758 9.75769L16 0L0 28H11.6255L21.5758 9.75769Z" />
-      <path d="M26.2381 17.9167L20.7382 28H32L26.2381 17.9167Z" />
+      viewBox="0 0 16 16">
+      <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+      <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z"/>
     </svg>
   );
 }
+
