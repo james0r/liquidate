@@ -5,19 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Install Dependencies:
 
 ```bash
-bun install
-```
-or 
-```bash
 npm install
 ```
 
 Run the development server:
 
-```bash
-bun dev
-```
-or
 ```bash
 npm run dev
 ```
