@@ -16,6 +16,11 @@ const nextConfig = {
         source: '/password',
         destination: '/',
         permanent: true
+      },
+      {
+        source: '/search/all',
+        destination: '/search',
+        permanent: true
       }
     ];
   },
