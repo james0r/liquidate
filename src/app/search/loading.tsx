@@ -7,7 +7,11 @@ export default function Loading() {
         .fill(0)
         .map((_, index) => {
           return (
-            <Grid.Item key={index} className="animate-pulse bg-neutral-100 dark:bg-neutral-900" />
+              index < 3 ? (
+                <Grid.Item key={index} className="animate-pulse bg-neutral-800 dark:bg-neutral-300" />
+              ) : (
+                <Grid.Item key={index} className="animate-pulse bg-neutral-400 dark:bg-neutral-700" />
+              )
           );
         })}
     </Grid>
